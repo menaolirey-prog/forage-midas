@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Concurso de Moda</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="start-screen" class="screen active">
+    <h1 class="logo">Concurso de Moda</h1>
+    <button id="play-btn" class="btn">Jugar</button>
+  </div>
+
+  <div id="game-screen" class="screen">
+    <div class="scene-info">
+      <h2 id="scenario-title"></h2>
+    </div>
+    <div class="avatar-wrap">
+      <div id="avatar">
+        <div class="body"></div>
+        <div class="hair"></div>
+        <div class="outfit"></div>
+        <div class="accessory"></div>
+      </div>
+    </div>
+
+    <div class="chooser">
+      <h3 id="category-title"></h3>
+      <div id="item-list" class="carousel"></div>
+      <button id="next-btn" class="btn">Siguiente</button>
+    </div>
+  </div>
+
+  <div id="score-screen" class="screen">
+    <h2>Resultado</h2>
+    <div class="judges">
+      <div class="judge" id="judge1">
+        <div class="face">😐</div>
+        <div class="judge-score"></div>
+      </div>
+      <div class="judge" id="judge2">
+        <div class="face">😐</div>
+        <div class="judge-score"></div>
+      </div>
+      <div class="judge" id="judge3">
+        <div class="face">😐</div>
+        <div class="judge-score"></div>
+      </div>
+    </div>
+    <div id="total-score" class="total-score"></div>
+    <button id="photo-btn" class="btn">Foto final</button>
+    <button id="restart-btn" class="btn">Jugar de nuevo</button>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
